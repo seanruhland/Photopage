@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/Sean/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js next
+  /Users/Sean/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js run dev
 
 PATH: 
   /Users/Sean/.nvm/versions/node/v8.9.4/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
@@ -20,7 +20,7 @@ npm manifest:
     "description": "nextJS app",
     "main": "index.js",
     "scripts": {
-      "dev": "next"
+      "dev": "node server/index.js"
     },
     "repository": "https://github.com/seanruhland/nextJSphoto.git",
     "author": "Sean Ruhland",
@@ -31,6 +31,9 @@ npm manifest:
       "node-sass": "^4.9.3",
       "react": "^16.4.2",
       "react-dom": "^16.4.2"
+    },
+    "devDependencies": {
+      "auto-prefixer": "^0.4.2"
     }
   }
 
@@ -854,6 +857,10 @@ Lockfile:
   atob@^2.1.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
+  
+  auto-prefixer@^0.4.2:
+    version "0.4.2"
+    resolved "https://registry.yarnpkg.com/auto-prefixer/-/auto-prefixer-0.4.2.tgz#f961c7d81904573ae0182e7158fcd96782dcde57"
   
   autoprefixer@^6.3.1:
     version "6.7.7"
@@ -5551,7 +5558,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c /Users/Sean/Documents/coding-projects/nextJS-Photo/node_modules/.bin/next
+  Arguments: -c node server/index.js
   Directory: /Users/Sean/Documents/coding-projects/nextJS-Photo
   Output:
   
